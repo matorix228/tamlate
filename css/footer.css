@@ -1,0 +1,124 @@
+
+
+.footer {
+    padding-top: 40px;
+    background: #2F324B;
+    padding-bottom: 50px;
+}
+
+.footer__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer__figure {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer__logo {
+    border-radius: 50%;
+    margin-right: 19px;
+}
+
+.footer__figcaption {
+    display: flex;
+    align-items: center;
+    color: #FFF;
+    font-family: Roboto,sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 17px;
+    width: 127px;
+}
+
+.footer__name {
+    color: #FFF;
+    font-family: Roboto,sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140.625%;
+}
+
+.footer__phone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer__number {
+    color: #FFF;
+    text-align: center;
+    font-family: Roboto,sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.footer__link_text {
+    color: #FFF;
+    text-align: center;
+    font-family: Roboto,sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+@media (max-width: 1024px) {
+    .footer {
+        padding-top: 37px;
+    }
+
+    .footer__logo {
+        width: 60px;
+        height: 60px;
+    }
+
+    .footer__number {
+        font-size: 21px;
+    }
+
+    .footer__link_text {
+        font-size: 13px;
+    }
+
+}
+
+@media (max-width: 520px) {
+    .footer {
+        padding-top: 25px;
+    }
+
+    .footer__logo {
+        width: 30px;
+        height: 30px;
+        margin-bottom: 20px;
+    }
+
+    .footer__figcaption {
+        font-size: 8px;
+    }
+
+    .footer__name {
+        display: none;
+    }
+
+    .footer__number, .footer__link_text {
+        display: none;
+    }
+
+    .footer__phone{
+        width: 30px;
+        height: 30px;
+    }
+
+    .footer__phone {
+        content: url("./../img/phone.svg");
+        background-color: #555A7B;
+        border-radius: 50%;
+        width: 24px;
+        height: 24px;
+        display: flex;
+        justify-content: center;
+    }
+}

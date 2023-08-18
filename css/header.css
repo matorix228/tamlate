@@ -1,0 +1,8 @@
+
+
+.header {
+    background-size: cover;
+    background-image: url("./../img/header-bg.jpg") ;
+    background-color: rgba(47, 50, 75, 0.85) ;
+    background-blend-mode: overlay;
+}

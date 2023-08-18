@@ -28,7 +28,7 @@
     #switch4:checked ~ #controls label:nth-child(3){
         background: url('./../img/left.svg') no-repeat; /*заливка фона картинкой без повторений*/
         position: absolute;
-        left: -50px;
+        left: -10%;
         bottom: 30px;
         display: block;
         height: 68px;
@@ -42,14 +42,12 @@
     #switch4:checked ~ #controls label:nth-child(1){
         background: url('./../img/right.svg') no-repeat; /*заливка фона картинкой без повторений*/
         position: absolute;
-        right: -50px;
+        right: -10%;
         bottom: 30px;
         display: block;
         height: 68px;
         width: 68px;
     }
-
-
 
     /*позиция изображения при активации переключателя*/
     #switch1:checked ~ #slides .about__list {
@@ -68,8 +66,8 @@
         margin-left: -300%;
     }
 
-
-
-
+    #slides .about__list{ /*анимация пролистывания изображений*/
+        transition: ease 1s
+    }
 }
 

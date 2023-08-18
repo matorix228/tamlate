@@ -64,9 +64,16 @@
     list-style-type: none;
     display: flex;
     justify-content: space-between;
+    flex-wrap: nowrap;
     position: relative;
     padding: 0;
     margin: 0;
+}
+
+@media (max-width: 580px) {
+    .about__list {
+        flex-wrap: wrap;
+    }
 }
 
 .about__item {
@@ -138,7 +145,6 @@
     }
 
     .about__list {
-        flex-wrap: wrap;
         justify-content: space-around;
     }
 

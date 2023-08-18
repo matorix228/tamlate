@@ -97,6 +97,7 @@
 
     .footer__figcaption {
         font-size: 8px;
+        width: 85px;
     }
 
     .footer__name {
@@ -107,12 +108,12 @@
         display: none;
     }
 
-    .footer__phone{
+    .footer__phone {
         width: 30px;
         height: 30px;
     }
 
-    .footer__phone {
+    .footer__phone:before {
         content: url("./../img/phone.svg");
         background-color: #555A7B;
         border-radius: 50%;
@@ -120,5 +121,6 @@
         height: 24px;
         display: flex;
         justify-content: center;
+        align-items: center;
     }
 }

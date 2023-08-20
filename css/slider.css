@@ -1,28 +1,14 @@
 @media (max-width: 520px) {
-    #slider {
+    .slider {
         position: relative;
     }
 
-
-
-
-    #slides .image{ /*устанавливает общий размер блока с изображениями*/
-        width: 500%;
-        line-height: 0;
-    }
-
-    #overflow{ /*сркывает все, что находится за пределами этого блока*/
-        width: 100%;
-        overflow: hidden;
-    }
-
-
     /*настройка переключения и положения для левой стрелки*/
     /*если свич1-5 активны, то идет обращение к лейблу из блока с id контролс*/
-    #switch1:checked ~ #controls label:nth-child(4),
-    #switch2:checked ~ #controls label:nth-child(1),
-    #switch3:checked ~ #controls label:nth-child(2),
-    #switch4:checked ~ #controls label:nth-child(3){
+    #switch1:checked ~ .controls .controls__switch:nth-child(4),
+    #switch2:checked ~ .controls .controls__switch:nth-child(1),
+    #switch3:checked ~ .controls .controls__switch:nth-child(2),
+    #switch4:checked ~ .controls .controls__switch:nth-child(3){
         background: url('./../img/left.svg') no-repeat; /*заливка фона картинкой без повторений*/
         position: absolute;
         left: -10%;
@@ -33,10 +19,10 @@
     }
 
     /*настройка переключения и положения для правой стрелки*/
-    #switch1:checked ~ #controls label:nth-child(2),
-    #switch2:checked ~ #controls label:nth-child(3),
-    #switch3:checked ~ #controls label:nth-child(4),
-    #switch4:checked ~ #controls label:nth-child(1){
+    #switch1:checked ~ .controls .controls__switch:nth-child(2),
+    #switch2:checked ~ .controls .controls__switch:nth-child(3),
+    #switch3:checked ~ .controls .controls__switch:nth-child(4),
+    #switch4:checked ~ .controls .controls__switch:nth-child(1){
         background: url('./../img/right.svg') no-repeat; /*заливка фона картинкой без повторений*/
         position: absolute;
         right: -10%;
@@ -47,23 +33,23 @@
     }
 
     /*позиция изображения при активации переключателя*/
-    #switch1:checked ~ #slides .about__list {
+    #switch1:checked ~ .slides__content .about__list {
         margin-left: 0;
     }
 
-    #switch2:checked ~ #slides .about__list {
+    #switch2:checked ~ .slides__content .about__list {
         margin-left: -100%;
     }
 
-    #switch3:checked ~ #slides .about__list {
+    #switch3:checked ~ .slides__content .about__list {
         margin-left: -200%;
     }
 
-    #switch4:checked ~ #slides .about__list {
+    #switch4:checked ~ .slides__content .about__list {
         margin-left: -300%;
     }
 
-    #slides .about__list{ /*анимация пролистывания изображений*/
+    .slides__content .about__list{ /*анимация пролистывания изображений*/
         transition: ease 1s
     }
 }

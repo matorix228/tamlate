@@ -35,7 +35,6 @@
 
 .footer__name {
     color: #FFF;
-    font-family: Roboto,sans-serif;
     font-size: 12px;
     font-style: normal;
     font-weight: 500;
@@ -51,7 +50,6 @@
 .footer__number {
     color: #FFF;
     text-align: center;
-    font-family: Roboto,sans-serif;
     font-size: 24px;
     font-weight: 400;
 }
@@ -59,9 +57,10 @@
 .footer__link_text {
     color: #FFF;
     text-align: center;
-    font-family: Roboto,sans-serif;
     font-size: 16px;
     font-weight: 400;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.50);
 }
 
 @media (max-width: 1024px) {

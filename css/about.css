@@ -146,6 +146,7 @@
 
     .about__list {
         justify-content: space-around;
+        row-gap: 40px;
     }
 
     .about__item {

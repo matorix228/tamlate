@@ -17,9 +17,15 @@
     font-size: 24px;
 }
 
+.head__number {
+    text-decoration: none;
+}
+
 .head__link_text {
     color: #ffffff;
     font-size: 21px;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.50);
 }
 
 @media(max-width: 1024px) {

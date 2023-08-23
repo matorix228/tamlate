@@ -1,8 +1,9 @@
 
 .head {
-    padding-top: 50px;
+    padding-top: 40px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .head__logo {
@@ -15,6 +16,8 @@
     align-items: center;
     color: #ffffff;
     font-size: 24px;
+    height: 53px;
+    justify-content: space-between;
 }
 
 .head__number {
@@ -23,12 +26,16 @@
 
 .head__link_text {
     color: #ffffff;
-    font-size: 21px;
+    font-size: 16px;
     text-decoration: none;
     border-bottom: 1px solid rgba(255, 255, 255, 0.50);
 }
 
 @media(max-width: 1024px) {
+    .head {
+        padding-top: 26px;
+    }
+
     .head__logo {
         width: 60px;
         height: 60px;
@@ -36,6 +43,9 @@
 
     .head__phone {
         font-size: 21px;
+        height: 52px;
+        row-gap: 8px;
+        justify-content: flex-start;
     }
 
     .head__link_text {
